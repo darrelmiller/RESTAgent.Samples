@@ -1,0 +1,9 @@
+glob:bin
+glob:obj
+glob:*.suo
+glob:TestResults
+glob:*.vspscc
+glob:*.vssscc
+glob:_ReSharper.*
+glob:*.resharper.*
+glob:*.ReSharper.*

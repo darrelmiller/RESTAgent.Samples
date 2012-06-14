@@ -15,12 +15,9 @@ namespace MazeExplorer {
             
             var restagent = new RestAgent();
             MazeSemanticsProvider.RegisterSemantics(restagent.SemanticsRegistry);
-            
-
 			restagent.SetAcceptedMediaTypes( new[] { new MediaTypeWithQualityHeaderValue("application/vnd.amundsen.maze+xml") });
 
             var link = new Link() {Target = new Uri("http://amundsen.com/examples/mazes/2d/five-by-five/")};
-            link.RequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.amundsen.maze+xml"));
             
             restagent.NavigateTo(link);
 
